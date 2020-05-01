@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-//FunÁ„o principal do programa
+//Fun√ß√£o principal do programa
 void main(){
 
-   //Definindo Vari·veis
+   //Definindo Vari√°veis
    bool a = true, b = false;
 
    //Se A for verdadeiro
@@ -25,7 +25,7 @@ void main(){
      printf("\nB eh falso");
    }
 
-    //Pausa o programa apÛs executar (Apenas no Windows)
+    //Pausa o programa ap√≥s executar (Apenas no Windows)
     system("pause");
 
 }
