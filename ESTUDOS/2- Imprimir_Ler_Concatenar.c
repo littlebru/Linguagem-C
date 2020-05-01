@@ -3,10 +3,10 @@
 
 void main(){
 
-    //Definindo uma vari·vel
+    //Definindo uma vari√°vel
     int a = 5, b;
 
-    //Imprimindo a vari·vel "a"
+    //Imprimindo a vari√°vel "a"
     printf("%d", a);
 
     //Concatenando
