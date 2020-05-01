@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//FunÁ„o principal do programa
+//Fun√ß√£o principal do programa
 void main(){
 
-    //Definindo Vari·veis
+    //Definindo Vari√°veis
     int a = 2;
     char b = 'y';
 
@@ -45,7 +45,7 @@ void main(){
             break;
     }
 
-    //Pausa o programa apÛs executar
+    //Pausa o programa ap√≥s executar
     system("pause");
 
 }
