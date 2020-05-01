@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//FunÁ„o principal do programa
+//Fun√ß√£o principal do programa
 void main(){
 
-    //Definindo Vari·veis
+    //Definindo Vari√°veis
     int a = 1, b = 10;
 
-    //Contando atÈ 10
+    //Contando at√© 10
     while(a <= 10){
 
         //Imprimindo 'a' na tela
@@ -29,7 +29,7 @@ void main(){
 
     }
 
-    //Pausa o programa apÛs executar
+    //Pausa o programa ap√≥s executar
     system("pause");
 
 }
