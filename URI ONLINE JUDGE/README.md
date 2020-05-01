@@ -1,6 +1,6 @@
 # ![Logo URI Online Judge](https://github.com/littlebru/Linguagem-C/blob/master/imagens/UriOnline.png)
 
-URI é uma plataforma que disponibiliza varios desafios e problematicas 
+URI é uma plataforma que disponibiliza varios desafios e problematicas para programadores que tenham diversos niveis de conhecimento.
 
 ## Desafios realizados na plataforma
 Exercicios realizados na plataforma e os niveis de dificuldades de cada um
