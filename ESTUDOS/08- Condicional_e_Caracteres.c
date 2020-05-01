@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//Função principal do programa
+//FunÃ§Ã£o principal do programa
 void main(){
 
-    //Definindo Variáveis
+    //Definindo VariÃ¡veis
     char letra = 'x';
 
     //Condicional Simples
@@ -12,15 +12,15 @@ void main(){
         printf("\nA letra eh x.");
     }
 
-    //Código em ASCII
+    //CÃ³digo em ASCII
     printf("\nCodigo da letra = %d", letra);
 
-    //Comparando Código ASCII
+    //Comparando CÃ³digo ASCII
     if(letra == 120){
          printf("\n A letra eh x.");
     }
 
-    //Pausa o programa após executar
+    //Pausa o programa apÃ³s executar
     system("pause");
 }
 
