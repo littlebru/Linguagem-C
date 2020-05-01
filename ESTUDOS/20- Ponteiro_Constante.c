@@ -9,7 +9,7 @@ int main(){
   printf("Imprimindo o endereco das variaveis na memoria\n");
   printf("Endereco de i: %p\n", &i);
   
-  /* O código especial %p é utilizado para imprimir ponteiros*/
+  /* O cÃ³digo especial %p Ã© utilizado para imprimir ponteiros*/
   printf("Endereco de j: %p\n", &j);
   printf("Endereco de k: %p\n", &k);
 
