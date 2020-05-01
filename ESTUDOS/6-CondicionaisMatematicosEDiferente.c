@@ -36,7 +36,7 @@ void main(){
         printf("\n %c nao eh a", d);
     }
 
-    //Pausa o programa após executar
+    //Pausa o programa após executar (Apenas Windows)
     system("pause");
 
 }

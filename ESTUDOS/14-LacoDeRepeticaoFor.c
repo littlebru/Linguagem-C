@@ -22,7 +22,7 @@ void main(){
         printf("\n%d", cont);
     }
 
-    //Pausa o programa após executar
+    //Pausa o programa após executar (Apenas no Windows)
     system("pause");
 
 }

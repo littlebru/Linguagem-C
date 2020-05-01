@@ -8,7 +8,7 @@ void main(){
     int a = 2;
     char b = 'y';
 
-    //Código de exemplo com if
+    // Condicionais tipo IF e ELSE
     if(a == 1){
         printf("\n Opcao escolhida: 1");
     }else if(a == 2){
@@ -19,7 +19,7 @@ void main(){
         printf("\n Opcao invalida");
     }
 
-    //O mesmo código de cima, adaptado ao Switch
+    // Condicionais tipo SWITCH CASE
     switch(a){
         case 1:
             printf("\n Opcao escolhida: 1");

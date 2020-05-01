@@ -30,7 +30,7 @@ void main(){
     //Imprimindo
     printf("Uhuu");
 
-    //Pausando
+    //Pausando (Apenas no Windows)
     system("pause");
 
 }

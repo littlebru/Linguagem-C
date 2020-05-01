@@ -23,7 +23,7 @@ void main(){
 
     //Primeiro executa uma vez, depois confere a condição
     do{
-
+ 
         //Imprimindo 'a' na tela
         printf("\n%d", a);
 

@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//Função principal do programa
 void main(){
 
     //Definindo Variáveis
@@ -22,7 +21,7 @@ void main(){
         printf("\n A variavel 'a' esta entre 5 e 15 ou ela vale 20 ");
     }
 
-    //Pausa o programa após executar
+    //Pausa o programa após executar (Apenas no Windows)
     system("pause");
 
 }

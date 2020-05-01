@@ -13,7 +13,7 @@ void main(){
         //Imprimindo 'a' na tela
         printf("\n%d", a);
 
-        //Incremento
+        // Somando 1
         a++;     //a = a + 1;
 
     }
@@ -24,8 +24,8 @@ void main(){
         //Imprimindo 'b' na tela
         printf("\n%d", b);
 
-        //Incremento
-        b--;    //b = b - 1;
+        // Subtraindo 1
+        b--;
 
     }
 

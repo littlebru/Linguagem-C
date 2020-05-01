@@ -22,6 +22,5 @@ void main(){
 
     //Pausa o programa após executar
     system("pause");
-
 }
 

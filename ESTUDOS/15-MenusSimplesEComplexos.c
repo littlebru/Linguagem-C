@@ -16,7 +16,7 @@ void main(){
         printf("\n2-Opcao 2");
         printf("\n3-Opcao 3\n");
 
-        //Lendo a opcao
+        //Lendo a opcao do usuario
         scanf("%d", &opcao);
 
         //Resultado de acordo com a opcao escolhida

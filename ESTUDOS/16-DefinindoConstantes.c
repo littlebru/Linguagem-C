@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+
+// Definindo uma constante
 #define TAM 10
 
 //Função principal do programa
@@ -15,7 +17,7 @@ void main(){
         printf("\n%d", i);
     }
 
-    //Pausa o programa após executar
+    //Pausa o programa após executar (Apenas no Windows)
     system("pause");
 
 }

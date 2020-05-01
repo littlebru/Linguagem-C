@@ -25,7 +25,7 @@ void main(){
      printf("\nB eh falso");
    }
 
-    //Pausa o programa após executar
+    //Pausa o programa após executar (Apenas no Windows)
     system("pause");
 
 }

@@ -1,5 +1,4 @@
-/* ponteiros.c */
-/* Mostra o uso de ponteiros variáveis */
+/* Variaveis em escopos diferentes */
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -10,10 +9,13 @@ int main(){
   float val_preco, val_reaj;
 
   do{
-
+	// Recebendo entrada do usuario
     printf("\nInsira o preco atual: ");
     scanf("%f", &val_preco);
-    reajusta20(&val_preco, &val_reaj);              /*Enviando endereços das variaveis*/
+	
+    reajusta20(&val_preco, &val_reaj);
+
+	/*Enviando endereços das variaveis*/
     printf("\nO preco novo e = %.2f", val_preco);
     printf("\nO aumento foi de = %.2f\n", val_reaj);
 

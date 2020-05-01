@@ -34,7 +34,7 @@ void main(){
     printf("\n O valor de c = %c", c);
     printf("\n O valor de d = %d\n", d);
 
-    //Pausando
+    //Pausando (Apenas no Windows)
     system("pause");
 
 }

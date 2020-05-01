@@ -25,7 +25,7 @@ void main(){
     //Valor Absoluto
     printf("\n O valor absoluto de -3 = %d", abs(-3));
 
-    //Pausa o programa após executar
+    //Pausa o programa após executar (Apenas no Windows)
     system("pause");
 
 }
