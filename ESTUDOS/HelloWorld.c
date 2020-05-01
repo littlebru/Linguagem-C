@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//Função principal do programa
+//FunÃ§Ã£o principal do programa
 void main(){
 
     //Imprime na tela
     printf("Oi mundo!");
 
-    //Pausa o programa após executar
+    //Pausa o programa apÃ³s executar
     system("pause");
 }
 
