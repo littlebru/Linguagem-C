@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//FunÁ„o principal do programa
+//Fun√ß√£o principal do programa
 void main(){
 
-    //Definindo Vari·veis
+    //Definindo Vari√°veis
     int a = 5, b = 10, c = 15;
     char d = 'x';
 
@@ -36,7 +36,7 @@ void main(){
         printf("\n %c nao eh a", d);
     }
 
-    //Pausa o programa apÛs executar (Apenas Windows)
+    //Pausa o programa ap√≥s executar (Apenas Windows)
     system("pause");
 
 }
