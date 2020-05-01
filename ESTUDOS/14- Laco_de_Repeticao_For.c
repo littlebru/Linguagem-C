@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//FunÁ„o principal do programa
+//Fun√ß√£o principal do programa
 void main(){
 
-    //Definir Vari·veis
+    //Definir Vari√°veis
     int cont;
 
     //Tabuada do 5
@@ -22,7 +22,7 @@ void main(){
         printf("\n%d", cont);
     }
 
-    //Pausa o programa apÛs executar (Apenas no Windows)
+    //Pausa o programa ap√≥s executar (Apenas no Windows)
     system("pause");
 
 }
