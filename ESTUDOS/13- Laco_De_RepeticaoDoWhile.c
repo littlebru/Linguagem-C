@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//FunÁ„o principal do programa
+//Fun√ß√£o principal do programa
 void main(){
 
-    //Definindo Vari·veis
+    //Definindo Vari√°veis
     int a = 1;
 
-    //Primeiro confere a condiÁ„o, depois repete o bloco
+    //Primeiro confere a condi√ß√£o, depois repete o bloco
     while(a <= 10){
 
         //Imprimindo 'a' na tela
@@ -21,7 +21,7 @@ void main(){
     //Alterando o valor de 'a'
     a = 20;
 
-    //Primeiro executa uma vez, depois confere a condiÁ„o
+    //Primeiro executa uma vez, depois confere a condi√ß√£o
     do{
  
         //Imprimindo 'a' na tela
@@ -32,7 +32,7 @@ void main(){
 
     }while(a <= 10);
 
-    //Pausa o programa apÛs executar
+    //Pausa o programa ap√≥s executar
     system("pause");
 
 }
