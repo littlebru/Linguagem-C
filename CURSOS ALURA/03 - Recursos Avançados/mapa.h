@@ -1,25 +1,36 @@
+// Definindo Contantes
+#define HEROI '@'
+#define FANTASMA 'F'
+#define VAZIO '.'
+#define PAREDE_VERTICAL '|'
+#define PAREDE_HORIZONTAL '-'
 
-struct mapa {	// Estrutura do mapa
+// Estrutura do mapa
+struct mapa {
 	char** matriz;
 	int linhas;
 	int colunas; 
 };
 
-typedef struct mapa MAPA;	// Renomeando estrutura de "struct mapa" -> "MAPA"
+// Renomeando estrutura de "struct mapa" -> "MAPA"
+typedef struct mapa MAPA;
 
-struct posicao {	// Estrutura de movimentação do personagem
+// Estrutura de movimentação do personagem
+struct posicao {
 	int x;
 	int y;
 };
 
-typedef struct posicao POSICAO;	// Renomeando estrutura de "struct posicao" -> POSICAO
+// Renomeando estrutura de "struct posicao" -> POSICAO
+typedef struct posicao POSICAO;
 
 // Inicializando funções
 void alocaMapa(MAPA* m);
+void copiaMapa(MAPA* destino, MAPA* origem);
 void leMapa(MAPA* m);
 void liberaMapa(MAPA* m);
 void imprimeMapa(MAPA* m);
 void encontraMapa(MAPA* m, POSICAO* p, char c);
-int menorQueVetor(MAPA* m, int x, int y);
-int ehPontinho(MAPA* m, int x, int y);
-int andaNoMapa(MAPA* m, int Xorigem, int Yorigem, int Xdestino, int Ydestino);
+int ehValida(MAPA* m, int x, int y);
+int ehVazia(MAPA* m, int x, int y);
+void andaNoMapa(MAPA* m, int origemX, int origemY, int destinoX, int destinoY);
