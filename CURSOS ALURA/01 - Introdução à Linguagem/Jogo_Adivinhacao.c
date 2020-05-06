@@ -1,64 +1,96 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
-int main(){
+#define JOGANDO 1
+#define ACABOU 0
 
-    //imprime cabeçalho do nosso jogo
-    printf("********************************************\n");
-    printf("   Seja bem-vindo ao jogo de adivinhacao!   \n");
-    printf("********************************************\n");
+int main() {
 
-    int numSecreto = 42;
+	int segundos = time(0);
+	srand(segundos);
 
-    int chute;
-    int tentativas = 1;
+	// imprime mensagem de boas vindas
 
-    float pontos = 1000;
-    float pontosperdidos = 0;
+	printf("                         /^\\             \n");
+	printf("                         | |             \n");
+	printf("                         |-|             \n");
+	printf("                    /^\\  | |             \n");
+	printf("             /^\\  / [_] \\+-+             \n");
+	printf("            |---||-------| |             \n");
+	printf("   _/^\\_    _/^\\_|  [_]  |_/^\\_   _/^\\_  \n");
+	printf("   |___|    |___||_______||___|   |___|  \n");
+	printf("    | |======| |===========| |=====| |   \n");
+	printf("    | |      | |    /^\\    | |     | |   \n");
+	printf("    | |      | |   |   |   | |     | |   \n");
+	printf("    |_|______|_|__ |   |___|_|_____|_|     \n");
+	printf("*******************************************\n");
+	printf("* Bem-vindo ao nosso jogo de adivinhação! *\n");
+	printf("*******************************************\n");
 
-    //Criando um loop infinito
-    while(1){
+	// jogo
+	int numerosecreto = rand() % 100 + 1;
 
-        printf("\n");
-        printf("TENTATIVA %d\n", tentativas);
+	//printf("O número secreto é %d.\n", numerosecreto);
 
-        printf("Qual seu chute: ");
-        scanf("%d", &chute);
+	int tentativa = 1;
+	double pontos = 1000;
+	int situacao = JOGANDO;
 
-        if(chute < 0){
-            printf("Voce nao pode chutar numeros negativos\n");
+	while(situacao == JOGANDO){
 
-            continue;
-        }
+		printf("\nTentativa %d\n", tentativa);
 
-        int acertou = (chute == numSecreto);
+		int chute;
+		printf("Qual é o seu chute (entre 1 e 100)? ");
+		scanf("%d", &chute);
 
-        int maior = chute > numSecreto;
+		int chuteehinvalido = (chute < 1) || (chute > 100);
+ 		if(chuteehinvalido) {
+			printf("O seu chute deve estar entre 1 e 100.\n");
+			continue;
+		}
 
-        if(acertou){
-                printf("\n");
-                printf("Parabens! voce descobriu o numero secreto\n");
-                printf("Jogue denovo, voce e' um bom jogador\n");
+		int acertou = (chute == numerosecreto);
 
-                break;
-            }
-        else if(maior){
-                printf("\n");
-                printf("resultado:  Seu chute foi maior que o numero secreto\n");
-            }
-        else{
-                printf("\n");
-                printf("resultado:  Seu chute foi menor que o numero secreto\n");
-            }
-            tentativas ++;
-            pontosperdidos = (chute - numSecreto) / 2.0;
-            pontos -= pontosperdidos;
-    }
+		if(acertou) {
+			situacao = ACABOU;
+			continue;
+		}
 
-    printf("\n********************************************\n");
-    printf("FIM DE JOGO!\n");
-    printf("Voce acertou com %d tentativa(s)\n", tentativas);
-    printf("Total de pontos: %.1f\n", pontos);
+		int maior = (numerosecreto > chute);
+		if(maior) {
+			printf("O número secreto é maior do que %d.\n", chute);
+		} else {
+			printf("O número secreto é menor do que %d.\n", chute);
+		}
 
-    return 0;
+		double pontosPerdidos = abs(chute - numerosecreto) / 2.0;
+		// printf("Voce pedeu %f pontos.\n", pontosPerdidos);
+		pontos -= pontosPerdidos;
 
+		tentativa++;
+
+	}	
+
+	printf("\n\n             OOOOOOOOOOO\n");
+	printf("         OOOOOOOOOOOOOOOOOOO\n");
+	printf("      OOOOOO  OOOOOOOOO  OOOOOO\n");
+	printf("    OOOOOO      OOOOO      OOOOOO\n");
+	printf("  OOOOOOOO  #   OOOOO  #   OOOOOOOO\n");
+	printf(" OOOOOOOOOO    OOOOOOO    OOOOOOOOOO\n");
+	printf("OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO\n");
+	printf("OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO\n");
+	printf("OOOO  OOOOOOOOOOOOOOOOOOOOOOOOO  OOOO\n");
+	printf(" OOOO  OOOOOOOOOOOOOOOOOOOOOOO  OOOO\n");
+	printf("  OOOO   OOOOOOOOOOOOOOOOOOOO  OOOO\n");
+	printf("    OOOOO   OOOOOOOOOOOOOOO   OOOO\n");
+	printf("      OOOOOO   OOOOOOOOO   OOOOOO\n");
+	printf("         OOOOOO         OOOOOO\n");
+	printf("             OOOOOOOOOOOO\n\n\n");
+	printf("Parabéns! Você acertou!\n");
+	printf("%d tentativas e %.2f pontos.\n", tentativa, pontos);
+	printf("Que tal jogar novamente?\n");
+
+	return 0;
 }
