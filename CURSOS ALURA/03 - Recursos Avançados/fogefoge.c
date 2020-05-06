@@ -1,23 +1,111 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "time.h"
 #include "fogefoge.h"
 #include "mapa.h"
+#include "ui.h"
 
-// Structs do tipo MAPA e POSICAO
 MAPA m;
 POSICAO heroi;
+int temPilula = 0;
 
-void moveFantasma(){
+
+int acabou() {
+	POSICAO p;
+
+	int encontrouHeroi = encontraMapa(&m, &p, HEROI);
+
+	return !encontrouHeroi;
+}
+
+int ehDirecao(char direcao) {
+	return
+		direcao == ESQUERDA || 
+		direcao == CIMA ||
+		direcao == BAIXO ||
+		direcao == DIREITA;
+}
+
+void move(char direcao) {
+
+	if(!ehDirecao(direcao))	
+		return;
+
+	int proximox = heroi.x;
+	int proximoy = heroi.y;
+
+	switch(direcao) {
+		
+		case ESQUERDA:
+			proximoy--;
+			break;
+
+		case CIMA:
+			proximox--;
+			break;
+
+		case BAIXO:
+			proximox++;
+			break;
+
+		case DIREITA:
+			proximoy++;
+			break;
+	}
+
+	if(!podeAndar(&m, HEROI, proximox, proximoy))
+		return;
+
+	if(ehPersonagem(&m, PILULA, proximox, proximoy)){
+		temPilula = 1;
+	}
+
+	andaNoMapa(&m, heroi.x, heroi.y, proximox, proximoy);
+	heroi.x = proximox;
+	heroi.y = proximoy;
+}
+
+int praOndeFantasmaVai(int xatual, int yatual, 
+	int* xdestino, int* ydestino) {
+
+	int opcoes[4][2] = { 
+		{ xatual   , yatual+1 }, 
+		{ xatual+1 , yatual   },  
+		{ xatual   , yatual-1 }, 
+		{ xatual-1 , yatual   }
+	};
+
+	srand(time(0));
+
+	for(int i = 0; i < 10; i++) {
+		int posicao = rand() % 4;
+
+		if(podeAndar(&m, FANTASMA, opcoes[posicao][0], opcoes[posicao][1])) {
+			*xdestino = opcoes[posicao][0];
+			*ydestino = opcoes[posicao][1];
+			return 1;
+		}
+	}
+
+	return 0;
+}
+
+void moveFantasma() {
 	MAPA copia;
 
 	copiaMapa(&copia, &m);
 
-	for(int c_x = 0; c_x < m.linhas; c_x++){
-		for(int c_y = 0; c_y < m.colunas; c_y++){
+	for(int i = 0; i < copia.linhas; i++) {
+		for(int j = 0; j < copia.colunas; j++) {
+			if(copia.matriz[i][j] == FANTASMA) {
 
-			if(copia.matriz[c_x][c_y] == FANTASMA){
-				if(ehValida(&m, c_x, c_y + 1) && ehVazia(&m, c_x, c_y+1)){
-					andaNoMapa(&m, c_x, c_y, c_x, c_y + 1);
+				int xdestino;
+				int ydestino;
+
+				int encontrou = praOndeFantasmaVai(i, j, &xdestino, &ydestino);
+
+				if(encontrou) {
+					andaNoMapa(&m, i, j, xdestino, ydestino);
 				}
 			}
 		}
@@ -26,86 +114,55 @@ void moveFantasma(){
 	liberaMapa(&copia);
 }
 
-// Função acabou: finaliza o jogo
-int acabou() {
-	return 0;
+void explodePilula(){
+
+	if(!temPilula)return;
+
+	explodir(heroi.x, heroi.y, 0, 1, 3);	// Explodindo lado esquerdo
+	explodir(heroi.x, heroi.y, 0, -1, 3);	// Explodindo lado direito
+	explodir(heroi.x, heroi.y, 1, 0, 3);	// Explodindo parte de baixo
+	explodir(heroi.x, heroi.y, -1, 0, 3);	// Explodindo parte de cima
+
+	temPilula--;
 }
 
-int ehDirecao(char direcao){
-	// Pior caso: Entrada do usuário é inválida
-	return direcao == 'a' ||
-	 direcao == 'w' ||
-	 direcao == 's' ||
-	 direcao == 'd';
-}
+void explodir(int x, int y, int somaX, int somaY, int qtd_vezes){
 
-// Função Move: lê entrada do usuario e move o personagem
-void move(char direcao) {
+	if(qtd_vezes == 0) return;
+
+	int novoX = x + somaX;
+	int novoY = y + somaY; 
+
+	if(!ehValida(&m, novoX, novoY)) return;
+	if(ehParede(&m, novoX, novoY)) return;
 	
-	if(!ehDirecao(direcao))
-		return;
-
-	// Armazenando posição atual do personagem
-	int proximoX = heroi.x;
-	int proximoY = heroi.y;
-
-	switch(direcao) {
-
-		case ESQUERDA:
-			proximoY--;
-			break;
-		
-		case CIMA:
-			proximoX--;
-			break;
-
-		case BAIXO:
-			proximoX++;
-			break;
-
-		case DIREITA:
-			proximoY++;
-			break;
-	}
-
-	// Pior caso: Proxima casa ultrapassa o tamanho do array de linhas e colunas
-	if(!ehValida(&m, proximoX, proximoY))
-		return;
-	
-	// Pior caso: Proxima casa é vazia ou uma parede
-	if(ehVazia(&m, proximoX, proximoY))
-		return;
-	
-	// Movimentando personagem no mapa
-	andaNoMapa(&m, heroi.x, heroi.y, proximoX, proximoY);
-
-	// Atualizando posição atual do personagem
-	heroi.x = proximoX;
-	heroi.y = proximoY;
+	m.matriz[novoX][novoY] = VAZIO;
+	explodir(novoX, novoY, somaX, somaY, qtd_vezes - 1);
 }
 
-// Limpa a tela do programa
-void limparTela(){
-	system("clear || cls");
+void limpaTela(){
+	system("cls || clear");
 }
 
-// Função principal do jogo
 int main() {
 	
 	leMapa(&m);
 	encontraMapa(&m, &heroi, HEROI);
 
 	do {
+		printf("Tem pilula: %s\n", (temPilula ? "SIM" : "NAO"));
 		imprimeMapa(&m);
-		// Lendo a entrada do usuário
+
 		char comando;
 		scanf(" %c", &comando);
 
 		move(comando);
+
+		if(comando == BOMBA) explodePilula();
+
 		moveFantasma();
 
-		limparTela();
-
+		limpaTela();
 	} while (!acabou());
 
 	liberaMapa(&m);
