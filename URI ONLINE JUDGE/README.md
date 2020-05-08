@@ -6,23 +6,23 @@ URI é uma plataforma que disponibiliza vários exercicios e problemáticas para
 Abaixo estão alguns exercicios que eu realizei na plataforma com o intuito de testar minhas habilidades depois de realizar os estudos a respeito da linguagem C:
 | Número do Problema | Exercicio | Linguagem |
 |:--------------------:|-----------|:------:|
-| 1002 | Área do Círculo| [C](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/16-%20Area_of_a_Circle.c)|
-| 1003 | Soma Simples  | [C](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/15-%20Simple_Sum.c)|
-| 1004 | Produto Simples  | [C](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/14-%20Simple_Product.c)|
-| 1006 | Média 2 | [C](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/13-%20Average_2.c) |
-| 1007 | Diferença | [C](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/13-%20Difference.c)|
-| 1009 | Salário com Bônus  | [C](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/12-%20Salary_with_Bonus.c)|
-| 1010 | Cálculo Simples  | [C](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/11-%20Simple_Calculate.c)|
-| 1011 | Esfera  | [C](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/10-%20Sphere.c)|
-| 1012 | Área | [C](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/09-%20Area.c)|
-| 1013 | O Maior | [C](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/08-%20The_Greatest.c)|
-| 1014 | Consumo  | [C](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/07-%20Consumption.c)|
-| 1015 | Distância entre dois pontos | [C](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/06-%20Distance_Between_Two_Points.c) |
-| 1016 | Distância | [C](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/05-%20Distance.c) |
-| 1017 | Gasto de Combustível | [C](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/04-%20Fuel_Spent.c) |
-| 1172 | Substituição de Matriz I | [C](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/03-%20Array_Replacement_I.c)|
-| 1187 | Área Superior  | [C](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/01-%20Top_Area.C)|
-| 1471 | Mergulho Perigoso | [C](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/02-%20Dangerous_Dive.c)|
+| 1002 | [Área do Círculo](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/16-%20Area_of_a_Circle.c)| C|
+| 1003 | [Soma Simples](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/15-%20Simple_Sum.c)  | C|
+| 1004 | [Produto Simples](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/14-%20Simple_Product.c)  | C|
+| 1006 | [Média 2](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/13-%20Average_2.c) | C |
+| 1007 | [Diferença](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/13-%20Difference.c) | C|
+| 1009 | [Salário com Bônus](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/12-%20Salary_with_Bonus.c)  | C|
+| 1010 | [Cálculo Simples](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/11-%20Simple_Calculate.c)  | C|
+| 1011 | [Esfera](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/10-%20Sphere.c)  | C|
+| 1012 | [Área](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/09-%20Area.c) | C|
+| 1013 | [O Maior](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/08-%20The_Greatest.c) | C|
+| 1014 | [Consumo](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/07-%20Consumption.c)  | C|
+| 1015 | [Distância entre dois pontos](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/06-%20Distance_Between_Two_Points.c) | C |
+| 1016 | [Distância](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/05-%20Distance.c) | C |
+| 1017 | [Gasto de Combustível](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/04-%20Fuel_Spent.c) | C |
+| 1172 | [Substituição de Matriz I](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/03-%20Array_Replacement_I.c) | C|
+| 1187 | [Área Superior](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/01-%20Top_Area.C)  | C|
+| 1471 | [Mergulho Perigoso](https://github.com/littlebru/Linguagem-C/blob/master/URI%20ONLINE%20JUDGE/02-%20Dangerous_Dive.c) | C|
 
 
 ----
