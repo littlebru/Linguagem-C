@@ -1,6 +1,6 @@
 # <img src="https://github.com/littlebru/Linguagem-C/blob/master/imagens/Logo_Alura.png" width="27%;" alt="Logo com letra C" title="Letra C"/>
 
-Dentro desta seção estão Jogos feitos em C, na plataforma da **Alura Cursos**, segue abaixo os jogos e o nome dos cursos realizados:
+Dentro desta seção estão Jogos feitos em C na plataforma da **Alura Cursos**, segue abaixo os jogos desenvolvidos:
 <h2><img src="https://github.com/littlebru/Linguagem-C/blob/master/imagens/Icones/interrogacao.png" width="4.5%;" alt="Adivinhação" title="Interrogação"/>  Jogo da Adivinhação</h2>
 
 
