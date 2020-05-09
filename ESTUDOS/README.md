@@ -1,6 +1,6 @@
 ![meus estudos](https://github.com/littlebru/Linguagem-C/blob/master/imagens/Logo.png)
 
-Nesta seção você vai encontrar alguns exercicios que fiz, depois de fazer uma busca na web por aulas de introdução a linguagem C, os códigos estão documentados de um jeitinho meio noob (para iniciantes).
+Nesta seção você vai encontrar alguns exercicios que fiz, depois de fazer uma busca na web por aulas de introdução a linguagem C, os códigos estão documentados de um jeitinho meio noob (explicação de iniciante).
 
 Segue as atividades realizadas: 
 
