@@ -49,3 +49,9 @@ e em seguida rodar o jogo com o comando
 | Certificado Módulo 01 | Certificado Módulo 02 | Certificado Módulo 03 |
 |:---------:|:---------:|:---------:|
 |  <img src="https://github.com/littlebru/Linguagem-C/blob/master/imagens/Certificados/Certificado_1.png" width="80%;" alt="certificado" title="Certificado Modulo 01"/>| <img src="https://github.com/littlebru/Linguagem-C/blob/master/imagens/Certificados/Certificado_2.png" width="80%;" alt="certificado" title="Certificado Modulo 02"/>| <img src="https://github.com/littlebru/Linguagem-C/blob/master/imagens/Certificados/Certificado_3.png" width="80%;" alt="certificado" title="Certificado Modulo 03"/>|
+
+## Autora
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/littlebru"><img src="https://avatars3.githubusercontent.com/u/41810923?s=460&u=c2196ec3a4f76218d7b11bb2a9cf025d2d2e9fdc&v=4" width="60px;"  title="Olha eu ai!"/><br /><sub><b>Bruna Gomes</b></sub></a><br /><a href="https://github.com/littlebru/Linguagem-C/" title="Code">❤️</a></td>
+</table>
