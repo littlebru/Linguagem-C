@@ -14,5 +14,5 @@ As atividades estão separadas por seções, sendo elas:
 ## Autora
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/littlebru"><img src="https://avatars3.githubusercontent.com/u/41810923?s=460&u=c2196ec3a4f76218d7b11bb2a9cf025d2d2e9fdc&v=4" width="100px;"  title="Olha eu ai!"/><br /><sub><b>Bruna Gomes</b></sub></a><br /><a href="https://github.com/littlebru/Linguagem-C/" title="Code">💙</a></td>
+    <td align="center"><a href="https://github.com/littlebru"><img src="https://avatars3.githubusercontent.com/u/41810923?s=460&u=c2196ec3a4f76218d7b11bb2a9cf025d2d2e9fdc&v=4" width="60px;"  title="Olha eu ai!"/><br /><sub><b>Bruna Gomes</b></sub></a><br /><a href="https://github.com/littlebru/Linguagem-C/" title="Code">💙</a></td>
 </table>
