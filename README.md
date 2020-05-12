@@ -1,7 +1,7 @@
 <img src="https://github.com/littlebru/Linguagem-C/blob/master/imagens/Linguagem_C.png" width="15%;" alt="Logo com letra C" title="Letra C"/><h1>Linguagem C</h1>
 <p>Explorando a linguagem e suas funcionalidades</p>
 
-Este repositório contém atividades realizadas na linguagem C, com a finalidade de explorar a linguagem e aprimorar minhas habilidades em lógica de programação.
+Este repositório contém atividades realizadas em linguagem C, com a finalidade de explorar a linguagem e aprimorar minhas habilidades em lógica de programação.
 
 As atividades estão separadas por seções, sendo elas:
 
