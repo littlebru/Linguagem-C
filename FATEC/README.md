@@ -1,7 +1,7 @@
 
 <h1><img src="https://github.com/littlebru/Linguagem-C/blob/master/imagens/Logo_Fatec.png" width="27%;" alt="Logo com letra C" title="Logo Alura"/>  Exercícios Resolvidos</h1>
 
-Dentro desta seção você vai encontrar os exercios resolvidos durante as aulas da Faculdade, abaixo estão os nomes dos exercicios e sua descrição:
+Dentro desta seção você vai encontrar os exercicios resolvidos durante as aulas da Faculdade, abaixo estão os nomes dos exercicios e sua descrição:
 
 
 | Exercicio | Descrição |
